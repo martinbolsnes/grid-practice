@@ -32,19 +32,23 @@ nav li {
   font-family: "montserrat";
   display: flex;
   flex-direction: column;
+  position: relative;
+  top: 90px;
+  right: 150px;
 }
 
 nav {
   display: none;
 }
-#hamburger-menu {
+#checkbox {
   display: none;
 }
 
 .fa-bars {
   color: black;
   font-size: 1.5rem;
-  margin-right: 120px;
+  position: relative;
+  right: 120px;
 }
 
 .hamburger-label {
@@ -52,10 +56,9 @@ nav {
   padding: 10px;
   font-size: 1.5rem;
   display: flex;
-  align-items: flex-start;
 }
 
-#hamburger-menu:checked ~ nav {
+#checkbox:checked ~ nav {
   display: block;
 }
 
