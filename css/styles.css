@@ -15,50 +15,20 @@ main {
 
 header {
   grid-area: header;
+  display: flex;
   height: 100px;
   width: 100%;
   border: solid black 1px;
-  display: flex;
   position: fixed;
   z-index: 12;
 }
 
-nav ul li {
-  padding: 10px;
-  color: black;
+nav li {
+  display: inline;
   font-size: 1.5rem;
   font-family: "montserrat";
-  display: inline;
-}
-
-.searchBox {
-  height: 35px;
-  width: 200px;
-  font-size: 1rem;
-}
-
-/* #hamburger-menu {
-  display: none;
-}
-
-.fa-bars {
-  color: black;
-  font-size: 1.5rem;
-  position: relative;
-  left: 120px;
-}
-
-.hamburger-label {
-  color: black;
   padding: 10px;
-  font-size: 1.5rem;
-  display: flex;
 }
-
-#hamburger-menu:checked ~ nav {
-  display: block;
-} */
-
 .herobanner {
   grid-area: herobanner;
   height: 400px;
