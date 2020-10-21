@@ -27,28 +27,11 @@ header {
   justify-content: space-between;
 }
 
-.logo {
-  margin-top: -30px;
-  margin-left: 100px;
-}
-
 nav ul li {
   display: inline;
   font-size: 1.5rem;
   font-family: "montserrat";
   padding: 20px;
-}
-
-.hamburger {
-  background-color: transparent;
-  border: 0;
-  font-size: 1.5rem;
-  cursor: pointer;
-  display: none;
-}
-
-.hamburger:focus {
-  outline: none;
 }
 
 .profile__icon,
@@ -59,6 +42,12 @@ nav ul li {
 
 .cart__icon {
   margin-right: 120px;
+}
+
+.hamburger {
+  margin-right: 120px;
+  display: none;
+  font-size: 1.5rem;
 }
 
 .herobanner {
@@ -115,58 +104,21 @@ nav ul li {
 }
 
 @media (max-width: 1200px) {
-  #hamburger,
-  .fa-bars,
-  .hamburger-label {
-    display: none;
-  }
 }
 
-@media (max-width: 1060px) {
-  nav ul {
+@media (max-width: 992px) {
+  .hamburger {
+    display: block;
+    margin-right: 50px;
+  }
+
+  nav,
+  ul,
+  .cart__icon,
+  .profile__icon {
     display: none;
   }
 
-  nav .nav-item {
-    color: black;
-  }
-
-  #hamburger {
-    display: none;
-  }
-
-  .fa-bars {
-    color: black;
-    font-size: 1.5rem;
-  }
-
-  .hamburger-label {
-    color: black;
-    padding: 10px;
-    font-size: 1.5rem;
-    display: block;
-  }
-
-  #hamburger:checked ~ nav ul {
-    display: block;
-  }
-
-  i {
-    margin-left: 10px;
-    margin-top: 15px;
-  }
-
-  #hamburger-label {
-    display: none;
-    float: left;
-    color: black;
-    padding: 10px;
-    font-size: 1.5rem;
-    display: block;
-  }
-}
-
-@media (max-width: 991px) {
   .herobanner,
   .ourCollections {
     height: 300px;
@@ -185,6 +137,21 @@ nav ul li {
 }
 
 @media (max-width: 767px) {
+  header {
+    height: 50px;
+  }
+
+  .hamburger {
+    margin-right: 20px;
+  }
+
+  nav,
+  ul,
+  .cart__icon,
+  .profile__icon {
+    display: none;
+  }
+
   .herobanner,
   .ourCollections {
     height: 200px;
