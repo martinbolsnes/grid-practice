@@ -23,22 +23,13 @@ header {
   position: fixed;
   z-index: 12;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
   margin-top: -30px;
-  margin-left: 120px;
-}
-
-.topnav {
-  display: flex;
-  align-items: center;
-}
-
-nav ul {
-  margin-left: 80px;
+  margin-left: 100px;
 }
 
 nav ul li {
@@ -60,40 +51,14 @@ nav ul li {
   outline: none;
 }
 
-.searchBox {
-  display: flex;
-}
-
-.searchBox__input {
-  display: flex;
-  align-items: center;
-  width: 200px;
-  height: 30px;
-  margin-top: 35px;
-  margin-left: 50px;
-}
-
-.profile {
-  display: flex;
-}
-
-.profile__icon {
-  display: flex;
-  align-items: center;
-  margin-left: 50px;
+.profile__icon,
+.cart__icon {
   width: 30px;
-}
-
-.cart {
-  display: flex;
+  padding: 10px;
 }
 
 .cart__icon {
-  display: flex;
-  align-items: center;
   margin-right: 120px;
-  margin-left: 10px;
-  width: 30px;
 }
 
 .herobanner {
@@ -149,15 +114,54 @@ nav ul li {
   justify-content: center;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1200px) {
+  #hamburger,
+  .fa-bars,
+  .hamburger-label {
+    display: none;
+  }
 }
 
-@media (max-width: 1360px) {
+@media (max-width: 1060px) {
   nav ul {
     display: none;
   }
 
-  .hamburger {
+  nav .nav-item {
+    color: black;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  .fa-bars {
+    color: black;
+    font-size: 1.5rem;
+  }
+
+  .hamburger-label {
+    color: black;
+    padding: 10px;
+    font-size: 1.5rem;
+    display: block;
+  }
+
+  #hamburger:checked ~ nav ul {
+    display: block;
+  }
+
+  i {
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+
+  #hamburger-label {
+    display: none;
+    float: left;
+    color: black;
+    padding: 10px;
+    font-size: 1.5rem;
     display: block;
   }
 }
