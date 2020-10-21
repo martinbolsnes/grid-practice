@@ -19,8 +19,16 @@ header {
   height: 100px;
   width: 100%;
   border: solid black 1px;
+  background-color: white;
   position: fixed;
   z-index: 12;
+  display: flex;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 nav li {
@@ -29,6 +37,7 @@ nav li {
   font-family: "montserrat";
   padding: 10px;
 }
+
 .herobanner {
   grid-area: herobanner;
   height: 400px;
