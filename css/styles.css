@@ -48,6 +48,18 @@ nav ul li {
   padding: 20px;
 }
 
+.hamburger {
+  background-color: transparent;
+  border: 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger:focus {
+  outline: none;
+}
+
 .searchBox {
   display: flex;
 }
@@ -141,6 +153,13 @@ nav ul li {
 }
 
 @media (max-width: 1360px) {
+  nav ul {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
 }
 
 @media (max-width: 991px) {
