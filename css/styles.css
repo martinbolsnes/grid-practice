@@ -23,15 +23,65 @@ header {
   position: fixed;
   z-index: 12;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
 }
 
-nav li {
+.logo {
+  display: flex;
+  align-items: center;
+  margin-top: -30px;
+  margin-left: 120px;
+}
+
+.topnav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  margin-left: 80px;
+}
+
+nav ul li {
   display: inline;
   font-size: 1.5rem;
   font-family: "montserrat";
-  padding: 10px;
+  padding: 20px;
+}
+
+.searchBox {
+  display: flex;
+}
+
+.searchBox__input {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 30px;
+  margin-top: 35px;
+  margin-left: 50px;
+}
+
+.profile {
+  display: flex;
+}
+
+.profile__icon {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  width: 30px;
+}
+
+.cart {
+  display: flex;
+}
+
+.cart__icon {
+  display: flex;
+  align-items: center;
+  margin-right: 120px;
+  margin-left: 10px;
+  width: 30px;
 }
 
 .herobanner {
@@ -87,7 +137,10 @@ nav li {
   justify-content: center;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1350px) {
 }
 
 @media (max-width: 991px) {
