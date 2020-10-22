@@ -26,6 +26,9 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+.logo {
+  margin-top: -25px;
+}
 
 nav ul li {
   display: inline;
